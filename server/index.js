@@ -302,7 +302,7 @@ app.post('/searchByMark', function(request, response)
     
     if(voto!="not defined" && voto!="body undefined"){
 		var simbolo = voto[0];
-		console.log(simbolo);
+		console.log(simbolo+"=");
 		voto = voto.substring(1); 
 		console.log(voto);
     	if(simbolo=="<"){
@@ -320,7 +320,7 @@ app.post('/searchByMark', function(request, response)
 		response.end(JSON.stringify("1"));
 	}
 	
-	//console.log(studenti);
+	console.log(studenti);
       
 
 });

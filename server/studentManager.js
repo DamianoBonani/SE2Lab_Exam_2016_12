@@ -21,7 +21,20 @@ var studentList = [
 		name: "Paolo",
 		address: "via Trento",
 		mark: "7"
+	},	{
+		ID: "4",
+		SSN: "asd1",
+		name: "asd1",
+		address: "via Trento",
+		mark: "3"
 	},
+	{
+		ID: "5",
+		SSN: "asd2",
+		name: "asd2",
+		address: "via Trento",
+		mark: "9"
+	}
 ];
 
 /**
@@ -139,7 +152,7 @@ var getStudentMaggiore = function getStudentMaggiore(voto)
 {
 	var ret = new Array();
 	for(var i=0;i<studentList.length;i++){
-		if(studentList[i].mark>voto){
+		if(studentList[i].mark>=voto){
 			ret.push(studentList[i]);
 		}
 	}
